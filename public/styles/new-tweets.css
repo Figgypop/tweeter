@@ -1,0 +1,82 @@
+.new-tweet {
+  width: 100%;
+}
+
+#tweet-text {
+  width: 100%;
+  background-color: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 4px solid black;
+  font-weight: bold;
+}
+
+.button-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.tweet-button {
+  background-color: purple;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.red-counter {
+  color: red;
+}
+
+.tweet-container {
+  width: 50%;
+  border: solid;
+  border-color: black;
+}
+
+.tweet-container:hover {
+  box-shadow: 10px 5px 5px gray;
+}
+
+.tweet-container header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: .5rem .5rem 1rem .5rem;
+}
+
+.tweet-email {
+  color: gray;
+  opacity: .5;
+  font-weight: 600;
+}
+
+.tweet-container section {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  border-bottom: solid black;
+  width: 95%;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.tweet-container footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: medium;
+}
+
+.fa-heart:hover {
+  color: green;
+}
+
+.fa-flag:hover {
+  color: green;
+}
+
+.fa-retweet:hover {
+  color: green;
+}
