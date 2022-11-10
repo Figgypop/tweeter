@@ -24,7 +24,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-main {
+main, .tweets-container {
   color: #b69741;
   width: 90%;
   display: flex;
@@ -32,6 +32,15 @@ main {
   align-items: center;
   flex-direction: column;
 margin: auto;
+}
+
+#error-message {
+  display: flex;
+  justify-content: center;
+  background: rgba(238, 85, 85, 0.853);
+  font-weight: bold;
+  font-size: larger;
+  color: black;
 }
 
 /*

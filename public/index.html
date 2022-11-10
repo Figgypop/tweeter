@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -44,36 +47,18 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <form class="tweet-form" method="post" action="/tweets/">
+      <div id="error-message"></div>
+      <form class="tweet-form" id="tweet-form">
         <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
         <div class="button-text">
-          <button class="tweet-button" type="submit">Tweet</button>
+          <button id="tweet-button" class="tweet-button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-    <article class="tweet-container">
-      <header>
-        <div>
-          <img src="https://i.imgur.com/73hZDYK.png" alt="avatar" width="40px">
-          Chester Cheetah
-        </div>
-        <div class="tweet-email">
-          @askCheese
-        </div>
-      </header>
-      <section>
-        It ain't easy being Cheesyy
-      </section>
-      <footer>
-        10 days ago
-        <div>
-          <i class="fa fa-flag" aria-hidden="true"></i>
-          <i class="fa fa-retweet" aria-hidden="true"></i>
-          <i class="fa fa-heart" aria-hidden="true"></i>
-        </div>
-      </footer>
-    </article>
+    <section class="tweets-container">
+
+    </section>
   </main>
 </body>
 
