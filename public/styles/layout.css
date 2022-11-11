@@ -14,7 +14,7 @@ html {
 }
 
 /*
- * Global layout stuff
+ * GLOBAL/MOBILE LAYOUT
  */
 
 body {
@@ -24,14 +24,15 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-main, .tweets-container {
+main,
+.tweets-container {
   color: #b69741;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-margin: auto;
+  margin: auto;
 }
 
 #error-message {
@@ -44,5 +45,20 @@ margin: auto;
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
+ * DESKTOP
  */
+ @media only screen and (min-width: 900px) {
+  main,
+  .tweets-container {
+    color: #b69741;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+}
+
+

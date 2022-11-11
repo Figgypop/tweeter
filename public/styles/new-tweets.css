@@ -1,3 +1,57 @@
+/*
+GLOBAL/MOBILE LAYOUT
+*/
+.button-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.tweet-button {
+  background-color: rgb(166, 38, 166);
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.red-counter {
+  color: red;
+}
+
+.tweet-container:hover {
+  box-shadow: 10px 5px 5px gray;
+}
+
+.fa-heart:hover {
+  color: green;
+}
+
+.fa-flag:hover {
+  color: green;
+}
+
+.fa-retweet:hover {
+  color: green;
+}
+
+.tweet-container header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: .5rem .5rem 1rem .5rem;
+}
+
+.tweet-email {
+  color: rgb(120, 118, 118);
+  font-weight: 600;
+}
+
+.tweet-container footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: medium;
+}
+
 .new-tweet {
   width: 100%;
 }
@@ -12,44 +66,12 @@
   font-weight: bold;
 }
 
-.button-text {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-}
-
-.tweet-button {
-  background-color: purple;
-  color: aliceblue;
-  font-weight: bold;
-}
-
-.red-counter {
-  color: red;
-}
-
 .tweet-container {
-  width: 50%;
+  width: 100%;
   border: solid;
   border-color: black;
   margin-bottom: 4rem;
-}
-
-.tweet-container:hover {
-  box-shadow: 10px 5px 5px gray;
-}
-
-.tweet-container header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: .5rem .5rem 1rem .5rem;
-}
-
-.tweet-email {
-  color: gray;
-  opacity: .5;
-  font-weight: 600;
+  margin-top: 2rem;
 }
 
 .tweet-container section {
@@ -61,23 +83,52 @@
   font-size: large;
   font-style: oblique;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
-.tweet-container footer {
+/*
+DESKTOP LAYOUT
+*/
+
+@media only screen and (min-width: 900px) {
+  .container  {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10rem;
+    margin-right: 4rem;
+    word-wrap: break-word;
+  }
+
+  .tweet-container section {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
   padding: 1rem;
-  font-size: medium;
+  border-bottom: solid black;
+  width: 95%;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+  word-wrap: break-word;
 }
 
-.fa-heart:hover {
-  color: green;
+  #tweet-text {
+    width: 100%;
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 4px solid black;
+    font-weight: bold;
+  }
+
+  .new-tweet {
+    width: 90%;
+  }
+
+  .text-avatar {
+    display: flex;
+  }
+
 }
 
-.fa-flag:hover {
-  color: green;
-}
-
-.fa-retweet:hover {
-  color: green;
-}

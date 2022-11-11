@@ -59,22 +59,23 @@ $(document).ready(function () {
   $("#tweet-form").on("submit", (event) => {
     event.preventDefault()
     const formInput = $("#tweet-text").val();
-    console.log("formInput:", formInput)
+    console.log("formInput:", formInput);
     $('#tweet-text').val('')
     const reqBody = {
       text: formInput
-    }
+    };
+    const counter = $('#tweet-text').siblings('.button-text').children('.counter');
+    counter.text(140)
     $("#error-message").html("")
     const error = $("#error-message")
     if (formInput.length > 140) {
-      error.append("❌Your tweet is too long❌").hide().slideDown()
-      return
+      error.append("❌Your tweet is too long❌").hide().slideDown();
     }
     if (formInput.length === 0) {
-      error.prepend("❌Your tweet is empty❌").hide().slideDown()
+      error.prepend("❌Your tweet is empty❌").hide().slideDown();
     }
 
-  
+
     $.ajax({
       method: "POST",
       url: "/tweets",
@@ -83,7 +84,7 @@ $(document).ready(function () {
         console.log("Submission successful:", data);
         loadTweets();
       }
-      
+
     })
 
   })

@@ -1,0 +1,29 @@
+/*
+MOBILE
+*/
+.user-info {
+  height: 340px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-color: #51a8e5;
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  color: #ccf15e;
+}
+
+/*
+DESKTOP
+*/
+@media only screen and (min-width: 900px) {
+  .user-info {
+    height: 450px;
+    width: 350px;
+    margin-left: 3vw;
+    margin-top: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

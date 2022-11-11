@@ -1,10 +1,16 @@
+/*
+GLOBAL/MOBILE
+*/
 nav {
   height: 120px;
   width: 100vw;
-  background-color: #615abf;
-  color: #62bc7d;
+  color: #ccf15e;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #51a8e5;
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+
 }
 
 .logo {
@@ -13,6 +19,43 @@ nav {
 }
 
 .logo span {
-  font-family: 'Bungee', sans-serif
+  font-family: 'Bungee', sans-serif;
+  font-size: 1rem;
 }
 
+.user-info h2 {
+  margin-top: 0;
+}
+
+/*
+DESKTOP
+*/
+
+@media only screen and (min-width: 900px) {
+  nav {
+    top: 0;
+    height: 120px;
+    width: 100vw;
+    background-color:darkorchid;
+    color: #ccf15e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  }
+
+  .logo {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  .logo span {
+    font-family: 'Bungee', sans-serif;
+    font-size: 2rem;
+  }
+  
+  .user-info h2 {
+    margin-top: 0;
+  }
+
+}
