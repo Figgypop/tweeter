@@ -7,9 +7,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-Screenshot of Tweeter Desktop UI (https://github.com/Figgypop/tweeter/blob/master/docs/Tweeter_Desktop_UI.png)
+Screenshot of Tweeter Desktop UI: ![](docs\Tweeter_Desktop_UI.png)
 
-Screenshot of Tweeter Mobile UI (https://github.com/Figgypop/tweeter/blob/master/docs/Tweeter_Mobile_UI.png)
+Screenshot of Tweeter Mobile UI: ![](docs\Tweeter_Mobile_UI.png)
 
 
 ## Getting Started
