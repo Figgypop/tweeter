@@ -3,7 +3,7 @@ GLOBAL/MOBILE
 */
 nav {
   height: 120px;
-  width: 100vw;
+  width: 100%;
   color: #ccf15e;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ DESKTOP
   nav {
     top: 0;
     height: 120px;
-    width: 100vw;
+    width: 100%;
     background-color:darkorchid;
     color: #ccf15e;
     display: flex;
