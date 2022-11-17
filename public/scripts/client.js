@@ -59,21 +59,22 @@ $(document).ready(function () {
   $("#tweet-form").on("submit", (event) => {
     event.preventDefault()
     const formInput = $("#tweet-text").val();
-    console.log("formInput:", formInput);
-    $('#tweet-text').val('')
     const reqBody = {
       text: formInput
     };
-    const counter = $('#tweet-text').siblings('.button-text').children('.counter');
-    counter.text(140)
     $("#error-message").html("")
     const error = $("#error-message")
     if (formInput.length > 140) {
       error.append("❌Your tweet is too long❌").hide().slideDown();
+      return;
     }
     if (formInput.length === 0) {
       error.prepend("❌Your tweet is empty❌").hide().slideDown();
+      return;
     }
+    const counter = $('#tweet-text').siblings('.button-text').children('.counter');
+    counter.text(140)
+    $('#tweet-text').val('')
 
 
     $.ajax({
@@ -81,14 +82,12 @@ $(document).ready(function () {
       url: "/tweets",
       data: reqBody,
       success: function (data) {
-        console.log("Submission successful:", data);
         loadTweets();
       }
 
     })
 
   })
-  loadTweets()
 
 });
 

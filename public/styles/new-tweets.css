@@ -72,6 +72,7 @@ GLOBAL/MOBILE LAYOUT
   border-color: black;
   margin-bottom: 4rem;
   margin-top: 2rem;
+  word-wrap: break-word;
 }
 
 .tweet-container section {
