@@ -14,8 +14,8 @@ const escape = function (str) {
 const loadTweets = function () {
   $.ajax('/tweets', { method: 'GET' })
     .then(function (data) {
+      $('.tweets-container').empty()
       renderTweets(data);
-      console.log('Success:', renderTweets);
     });
 };
 
@@ -88,6 +88,8 @@ $(document).ready(function () {
     })
 
   })
+
+  loadTweets()
 
 });
 
